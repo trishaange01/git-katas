@@ -1,0 +1,178 @@
+pwd
+/home/analog
+analog@sdg-nuc-01:~$ cdcd /
+analog@sdg-nuc-01:/$ ls
+bin    libx32       run                          tmpjcef-p1444290_scheme.tmp
+boot   license.lic  sbin                         tmpjcef-p1984306_scheme.tmp
+cdrom  lost+found   snap                         tmpjcef-p1985108_scheme.tmp
+dev    media        srv                          tmpjcef-p20362_scheme.tmp
+etc    mlhsp        swap.img                     tmpjcef-p2641_scheme.tmp
+home   mnt          sys                          tmpjcef-p641352_scheme.tmp
+lib    opt          tmp                          tmpjcef-p832765_scheme.tmp
+lib32  proc         tmpjcef-p1024956_scheme.tmp  usr
+lib64  root         tmpjcef-p1239048_scheme.tmp  var
+analog@sdg-nuc-01:/$ cd dvdev
+analog@sdg-nuc-01:/dev$ ls
+autofs           loop0         stderr  tty4       ttyS15    ttyUSB7
+block            loop1         stdin   tty40      ttyS16    ttyUSB9
+bsg              loop2         stdout  tty41      ttyS17    ubuntu-vg
+btrfs-control    loop3         tpm0    tty42      ttyS18    udmabuf
+bus              loop4         tpmrm0  tty43      ttyS19    uhid
+char             loop5         tty     tty44      ttyS2     uinput
+console          loop6         tty0    tty45      ttyS20    urandom
+core             loop7         tty1    tty46      ttyS21    userio
+cpu              loop8         tty10   tty47      ttyS22    vcs
+cpu_dma_latency  loop-control  tty11   tty48      ttyS23    vcs1
+cuse             mapper        tty12   tty49      ttyS24    vcs2
+disk             mcelog        tty13   tty5       ttyS25    vcs3
+dm-0             mei0          tty14   tty50      ttyS26    vcs4
+dma_heap         mem           tty15   tty51      ttyS27    vcs5
+dri              mqueue        tty16   tty52      ttyS28    vcs6
+ecryptfs         net           tty17   tty53      ttyS29    vcsa
+fd               ng0n1         tty18   tty54      ttyS3     vcsa1
+full             null          tty19   tty55      ttyS30    vcsa2
+fuse             nvme0         tty2    tty56      ttyS31    vcsa3
+gpiochip0        nvme0n1       tty20   tty57      ttyS4     vcsa4
+gpiochip1        nvme0n1p1     tty21   tty58      ttyS5     vcsa5
+gpiochip10       nvme0n1p2     tty22   tty59      ttyS6     vcsa6
+gpiochip8        nvme0n1p3     tty23   tty6       ttyS7     vcsu
+gpiochip9        nvram         tty24   tty60      ttyS8     vcsu1
+hpet             port          tty25   tty61      ttyS9     vcsu2
+hugepages        ppp           tty26   tty62      ttyUSB0   vcsu3
+hwrng            psaux         tty27   tty63      ttyUSB10  vcsu4
+i2c-0            ptmx          tty28   tty7       ttyUSB11  vcsu5
+i2c-1            pts           tty29   tty8       ttyUSB12  vcsu6
+i2c-2            random        tty3    tty9       ttyUSB13  vfio
+i2c-3            rfkill        tty30   ttyACM1    ttyUSB14  vga_arbiter
+i2c-4            rtc           tty31   ttyACM2    ttyUSB15  vhci
+i2c-5            rtc0          tty32   ttyprintk  ttyUSB16  vhost-net
+i2c-6            sda           tty33   ttyS0      ttyUSB17  vhost-vsock
+i2c-7            sda1          tty34   ttyS1      ttyUSB18  zero
+initctl          serial        tty35   ttyS10     ttyUSB19  zfs
+input            sg0           tty36   ttyS11     ttyUSB20
+kmsg             shm           tty37   ttyS12     ttyUSB21
+kvm              snapshot      tty38   ttyS13     ttyUSB22
+log              snd           tty39   ttyS14     ttyUSB23
+analog@sdg-nuc-01:/dev$ cd serial
+analog@sdg-nuc-01:/dev/serial$ ls
+by-id  by-path
+analog@sdg-nuc-01:/dev/serial$ cd by-id
+analog@sdg-nuc-01:/dev/serial/by-id$ ls
+usb-2012_Cypress_Semiconductor_Cypress-USB2UART-Ver1.0G_01431AD34B15-if00
+usb-Analog_Devices_Inc._PlutoSDR__ADALM-PLUTO__1044739659930006efff12003fdc2782d5-if03
+usb-Digilent_Digilent_Adept_USB_Device_210203AB8E47-if01-port0
+usb-FTDI_FT232R_USB_UART_AK054OP6-if00-port0
+usb-Silicon_Labs_CP2103_USB_to_UART_Bridge_Controller_0001-if00-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_40514E02D54D4D8E11E72AA2003FA11-if00-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_40514E02D54D4D8E11E72AA2003FA11-if01-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_40514E02D54D4D8E11E72AA2003FA11-if02-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_40514E02D54D4D8E11E72AA2003FA11-if03-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C1EBA711E8F4963C70BA0-if00-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C1EBA711E8F4963C70BA0-if01-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C1EBA711E8F4963C70BA0-if02-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C1EBA711E8F4963C70BA0-if03-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C49A8E11E8F4848857BD9-if00-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C49A8E11E8F4848857BD9-if01-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C49A8E11E8F4848857BD9-if02-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C49A8E11E8F4848857BD9-if03-port0
+analog@sdg-nuc-01:/dev/serial/by-id$ ^C
+analog@sdg-nuc-01:/dev/serial/by-id$ cdusb-2012_Cypress_Semiconductor_Cypress-USB2UART-Ver1.0G_01431AD34B15-if00
+usb-Analog_Devices_Inc._PlutoSDR__ADALM-PLUTO__1044739659930006efff12003fdc2782d5-if03
+usb-Digilent_Digilent_Adept_USB_Device_210203AB8E47-if01-port0
+usb-FTDI_FT232R_USB_UART_AK054OP6-if00-port0
+usb-Silicon_Labs_CP2103_USB_to_UART_Bridge_Controller_0001-if00-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_40514E02D54D4D8E11E72AA2003FA11-if00-port0
+usb-2012_Cypress_Semiconductor_Cypress-USB2UART-Ver1.0G_01431AD34B15-if00: command not found
+analog@sdg-nuc-01:/dev/serial/by-id$ usb-Analog_Devices_Inc._PlutoSDR__ADALM-PLUTO__1044739659930006efff12003fdc2782d5-if03
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_40514E02D54D4D8E11E72AA2003FA11-if01-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_40514E02D54D4D8E11E72AA2003FA11-if02-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_40514E02D54D4D8E11E72AA2003FA11-if03-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C1EBA711E8F4963C70BA0-if00-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C1EBA711E8F4963C70BA0-if01-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C1EBA711E8F4963C70BA0-if02-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C1EBA711E8F4963C70BA0-if03-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C49A8E11E8F4848857BD9-if00-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C49A8E11E8F4848857BD9-if01-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C49A8E11E8F4848857BD9-if02-port0
+usb-Analog_Devices_Inc._PlutoSDR__ADALM-PLUTO__1044739659930006efff12003fdc2782d5-if03: command not found
+analog@sdg-nuc-01:/dev/serial/by-id$ usb-Digilent_Digilent_Adept_USB_Device_210203AB8E47-if01-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C49A8E11E8F4848857BD9-if03-port0usb-Digilent_Digilent_Adept_USB_Device_210203AB8E47-if01-port0: command not found
+analog@sdg-nuc-01:/dev/serial/by-id$ usb-FTDI_FT232R_USB_UART_AK054OP6-if00-port0
+usb-FTDI_FT232R_USB_UART_AK054OP6-if00-port0: command not found
+analog@sdg-nuc-01:/dev/serial/by-id$ usb-Silicon_Labs_CP2103_USB_to_UART_Bridge_Controller_0001-if00-port0
+usb-Silicon_Labs_CP2103_USB_to_UART_Bridge_Controller_0001-if00-port0: command not found
+analog@sdg-nuc-01:/dev/serial/by-id$ usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_40514E02D54D4D8E11E72AA2003FA11-if00-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_40514E02D54D4D8E11E72AA2003FA11-if00-port0: command not found
+analog@sdg-nuc-01:/dev/serial/by-id$ usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_40514E02D54D4D8E11E72AA2003FA11-if01-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_40514E02D54D4D8E11E72AA2003FA11-if01-port0: command not found
+analog@sdg-nuc-01:/dev/serial/by-id$ usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_40514E02D54D4D8E11E72AA2003FA11-if02-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_40514E02D54D4D8E11E72AA2003FA11-if02-port0: command not found
+analog@sdg-nuc-01:/dev/serial/by-id$ usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_40514E02D54D4D8E11E72AA2003FA11-if03-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_40514E02D54D4D8E11E72AA2003FA11-if03-port0: command not found
+analog@sdg-nuc-01:/dev/serial/by-id$ usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C1EBA711E8F4963C70BA0-if00-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C1EBA711E8F4963C70BA0-if00-port0: command not found
+analog@sdg-nuc-01:/dev/serial/by-id$ usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C1EBA711E8F4963C70BA0-if01-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C1EBA711E8F4963C70BA0-if01-port0: command not found
+analog@sdg-nuc-01:/dev/serial/by-id$ usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C1EBA711E8F4963C70BA0-if02-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C1EBA711E8F4963C70BA0-if02-port0: command not found
+analog@sdg-nuc-01:/dev/serial/by-id$ usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C1EBA711E8F4963C70BA0-if03-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C1EBA711E8F4963C70BA0-if03-port0: command not found
+analog@sdg-nuc-01:/dev/serial/by-id$ usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C49A8E11E8F4848857BD9-if00-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C49A8E11E8F4848857BD9-if00-port0: command not found
+analog@sdg-nuc-01:/dev/serial/by-id$ usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C49A8E11E8F4848857BD9-if01-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C49A8E11E8F4848857BD9-if01-port0: command not found
+analog@sdg-nuc-01:/dev/serial/by-id$ usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C49A8E11E8F4848857BD9-if02-port0
+usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C49A8E11E8F4848857BD9-if02-port0: command not found
+analog@sdg-nuc-01:/dev/serial/by-id$ usb-Silicon_Labs_CP2108_Quad_USB_to_UART_Bridge_Controller_75829DA762C49A8E11E8F4848857BD9-if03-port0
+cd /
+analog@sdg-nuc-01:/$ cd /home/analog
+analog@sdg-nuc-01:~$ mkdir nuc01
+analog@sdg-nuc-01:~$ cd nuc01
+analog@sdg-nuc-01:~/nuc01$ touch by_id.txt
+analog@sdg-nuc-01:~/nuc01$ pwd
+/home/analog/nuc01
+analog@sdg-nuc-01:~/nuc01$ cd ..
+analog@sdg-nuc-01:~$ pwd
+/home/analog
+analog@sdg-nuc-01:~$ cd /
+analog@sdg-nuc-01:/$ cd devdev
+analog@sdg-nuc-01:/dev$ cd serial
+analog@sdg-nuc-01:/dev/serial$ pwdcd by-path
+analog@sdg-nuc-01:/dev/serial/by-path$ ls
+pci-0000:00:14.0-usb-0:2:1.0-port0      pci-0000:00:14.0-usb-0:8.2:1.0-port0
+pci-0000:00:14.0-usb-0:6:1.3            pci-0000:00:14.0-usb-0:8.2:1.1-port0
+pci-0000:00:14.0-usb-0:7.1.3:1.1-port0  pci-0000:00:14.0-usb-0:8.2:1.2-port0
+pci-0000:00:14.0-usb-0:8.1.1:1.0-port0  pci-0000:00:14.0-usb-0:8.2:1.3-port0
+pci-0000:00:14.0-usb-0:8.1.1:1.1-port0  pci-0000:00:14.0-usb-0:8.3:1.0-port0
+pci-0000:00:14.0-usb-0:8.1.1:1.2-port0  pci-0000:00:14.0-usb-0:8.3:1.1-port0
+pci-0000:00:14.0-usb-0:8.1.1:1.3-port0  pci-0000:00:14.0-usb-0:8.3:1.2-port0
+pci-0000:00:14.0-usb-0:8.1.2:1.0-port0  pci-0000:00:14.0-usb-0:8.3:1.3-port0
+pci-0000:00:14.0-usb-0:8.1.3:1.0-port0  pci-0000:00:14.0-usb-0:8.4:1.0-port0
+pci-0000:00:14.0-usb-0:8.1.4:1.0
+analog@sdg-nuc-01:/dev/serial/by-path$ pci-0000:00:14.0-usb-0:2:1.0-port0      pci-0000:00:14.0-usb-0:8.2:1.0-port0
+pci-0000:00:14.0-usb-0:6:1.3            pci-0000:00:14.0-usb-0:8.2:1.1-port0
+pci-0000:00:14.0-usb-0:7.1.3:1.1-port0  pci-0000:00:14.0-usb-0:8.2:1.2-port0
+pci-0000:00:14.0-usb-0:8.1.1:1.0-port0  pci-0000:00:14.0-usb-0:8.2:1.3-port0
+pci-0000:00:14.0-usb-0:8.1.1:1.1-port0  pci-0000:00:14.0-usb-0:8.3:1.0-port0
+pci-0000:00:14.0-usb-0:2:1.0-port0: command not found
+analog@sdg-nuc-01:/dev/serial/by-path$ pci-0000:00:14.0-usb-0:6:1.3            pci-0000:00:14.0-usb-0:8.2:1.1-port0
+pci-0000:00:14.0-usb-0:8.1.1:1.2-port0  pci-0000:00:14.0-usb-0:8.3:1.1-port0
+pci-0000:00:14.0-usb-0:8.1.1:1.3-port0  pci-0000:00:14.0-usb-0:8.3:1.2-port0
+pci-0000:00:14.0-usb-0:8.1.2:1.0-port0  pci-0000:00:14.0-usb-0:8.3:1.3-port0
+pci-0000:00:14.0-usb-0:8.1.3:1.0-port0  pci-0000:00:14.0-usb-0:8.4:1.0-port0
+pci-0000:00:14.0-usb-0:6:1.3: command not found
+pci-0000:00:14.0-usb-0:8.1.4:1.0analog@sdg-nuc-01:/dev/serial/by-path$ pci-0000:00:14.0-usb-0:7.1.3:1.1-port0  pci-0000:00:14.0-usb-0:8.2:1.2-port0
+pci-0000:00:14.0-usb-0:7.1.3:1.1-port0: command not found
+analog@sdg-nuc-01:/dev/serial/by-path$ pci-0000:00:14.0-usb-0:8.1.1:1.0-port0  pci-0000:00:14.0-usb-0:8.2:1.3-port0
+pci-0000:00:14.0-usb-0:8.1.1:1.0-port0: command not found
+analog@sdg-nuc-01:/dev/serial/by-path$ pci-0000:00:14.0-usb-0:8.1.1:1.1-port0  pci-0000:00:14.0-usb-0:8.3:1.0-port0
+pci-0000:00:14.0-usb-0:8.1.1:1.1-port0: command not found
+analog@sdg-nuc-01:/dev/serial/by-path$ pci-0000:00:14.0-usb-0:8.1.1:1.2-port0  pci-0000:00:14.0-usb-0:8.3:1.1-port0
+pci-0000:00:14.0-usb-0:8.1.1:1.2-port0: command not found
+analog@sdg-nuc-01:/dev/serial/by-path$ pci-0000:00:14.0-usb-0:8.1.1:1.3-port0  pci-0000:00:14.0-usb-0:8.3:1.2-port0
+pci-0000:00:14.0-usb-0:8.1.1:1.3-port0: command not found
+analog@sdg-nuc-01:/dev/serial/by-path$ pci-0000:00:14.0-usb-0:8.1.2:1.0-port0  pci-0000:00:14.0-usb-0:8.3:1.3-port0
+pci-0000:00:14.0-usb-0:8.1.2:1.0-port0: command not found
+analog@sdg-nuc-01:/dev/serial/by-path$ pci-0000:00:14.0-usb-0:8.1.3:1.0-port0  pci-0000:00:14.0-usb-0:8.4:1.0-port0
+pci-0000:00:14.0-usb-0:8.1.3:1.0-port0: command not found
+analog@sdg-nuc-01:/dev/serial/by-path$ pci-0000:00:14.0-usb-0:8.1.4:1.0

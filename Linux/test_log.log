@@ -1,0 +1,37 @@
+cd /homeLinux
+-bash: cd: /Linux: No such file or directory
+analog@raspberrypi:~/Linux/Test/test1 $ cd /
+analog@raspberrypi:/ $ cd /Li/Linux
+-bash: cd: /Linux: No such file or directory
+analog@raspberrypi:/ $ cd /home/analog
+analog@raspberrypi:~ $ pwd
+/home/analog
+analog@raspberrypi:~ $ cd Linux
+analog@raspberrypi:~/Linux $ mkdir Test
+analog@raspberrypi:~/Linux $ cd Test
+analog@raspberrypi:~/Linux/Test $ mkdir test1
+analog@raspberrypi:~/Linux/Test $ mkdir test2
+analog@raspberrypi:~/Linux/Test $ mkdir test3
+analog@raspberrypi:~/Linux/Test $ touch file.txt
+analog@raspberrypi:~/Linux/Test $ cd tstest1
+analog@raspberrypi:~/Linux/Test/test1 $ touch file1.txt
+analog@raspberrypi:~/Linux/Test/test1 $ touch file1.txt1.txt.txte.txt2.txt
+analog@raspberrypi:~/Linux/Test/test1 $ cd ../..
+analog@raspberrypi:~/Linux/Test $ ls
+file.txt  test1  test2  test3
+analog@raspberrypi:~/Linux/Test $ tree
+.
+tqq file.txt
+tqq test1
+x   tqq file1.txt
+x   mqq file2.txt
+tqq test2
+mqq test3
+
+3 directories, 3 files
+analog@raspberrypi:~/Linux/Test $ cd ..
+analog@raspberrypi:~/Linux $ mkdir dir_tesTest
+analog@raspberrypi:~/Linux $ touch dircd dir_Test
+analog@raspberrypi:~/Linux/dir_Test $ touch dir_test.txt dir_test.txt dir_test.txt dir_test.txt dir_test.txt dir_test.txte dir_test.txtc dir_test.txth dir_test.txto dir_test.txt dir_test.txt' dir_test.txt dir_test.txtdir_test.txt' dir_test.txt dir_test.txt dir_test.txt' dir_test.txtfile.txt  test1  test2  test3 dir_test.txtanalog@raspberrypi:~/Linux/dir_Test $ file.txt  test1  test2  test3' dir_test.txtanalog@raspberrypi:~/Linux/dir_Test $ > dir_test.txtanalog@raspberrypi:~/Linux/dir_Test $ 
+ dir_test.txtanalog@raspberrypi:~/Linux/dir_Test $ > dir_test.txtanalog@raspberrypi:~/Linux/dir_Test $ dir_test.txtanalog@raspberrypi:~/Linux/dir_Test $  '>dir_test.txtanalog@raspberrypi:~/Linux/dir_Test $ '>dir_test.txtanalog@raspberrypi:~/Linux/dir_Test $  >dir_test.txtanalog@raspberrypi:~/Linux/dir_Test $  dir_test.txt
+analog@raspberrypi:~/Linux/dir_Test $ 
