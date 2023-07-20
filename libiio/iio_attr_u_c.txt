@@ -1,0 +1,9 @@
+C:\Users\TDEVERA2\libiio>iio_attr -u usb:1.5.5 -c
+IIO context has 7 devices:
+        iio:device0, ad9361-phy: found 11 channels
+        iio:device1, axi-core-tdd: found 4 channels
+        iio:device2, xadc: found 10 channels
+        iio:device3, one-bit-adc-dac: found 2 channels
+        iio:device4, adf4159: found 1 channels
+        iio:device5, cf-ad9361-dds-core-lpc: found 12 channels
+        iio:device6, cf-ad9361-lpc: found 4 channels

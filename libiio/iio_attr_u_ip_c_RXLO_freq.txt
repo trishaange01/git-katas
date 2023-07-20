@@ -1,0 +1,5 @@
+C:\Users\TDEVERA2\libiio>iio_attr -u ip:192.168.2.1 -c ad9361-phy RX_LO frequency
+2399999998
+
+C:\Users\TDEVERA2\libiio>iio_attr -u ip:192.168.2.1 -c ad9361-phy RX_LO frequency 2400000100
+2400000098

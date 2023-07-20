@@ -1,0 +1,15 @@
+C:\Users\TDEVERA2\libiio>iio_attr -u usb:3.8.5 -d
+Unable to create IIO context usb:3.8.5: No such device (19)
+
+C:\Users\TDEVERA2\libiio>iio_attr -u usb:1.1.5 -d
+Unable to create IIO context usb:1.1.5: No such device (19)
+
+C:\Users\TDEVERA2\libiio>iio_attr -u usb:1.5.5 -d
+IIO context has 7 devices:
+        iio:device0, ad9361-phy: found 18 device attributes
+        iio:device1, axi-core-tdd: found 11 device attributes
+        iio:device2, xadc: found 1 device attributes
+        iio:device3, one-bit-adc-dac: found 0 device attributes
+        iio:device4, adf4159: found 0 device attributes
+        iio:device5, cf-ad9361-dds-core-lpc: found 0 device attributes
+        iio:device6, cf-ad9361-lpc: found 0 device attributes

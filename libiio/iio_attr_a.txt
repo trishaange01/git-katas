@@ -1,0 +1,22 @@
+C:\Users\TDEVERA2\libiio>iio_attr -a
+Using auto-detected IIO context at URI "usb:1.5.5"
+must specify one of -d, -c, -C, -B or -D.
+
+C:\Users\TDEVERA2\libiio>iio_attr -a -C
+Using auto-detected IIO context at URI "usb:1.5.5"
+IIO context with 15 attributes:
+hw_model: Analog Devices PlutoSDR Rev.C (Z7010-AD9361)
+hw_model_variant: 1
+hw_serial: 1044734c9605001109000f00418f4f915f
+fw_version: v0.34-4-g1841-dirty
+ad9361-phy,xo_correction: 39999927
+ad9361-phy,model: ad9361
+local,kernel: 5.4.0-00541-g4f9d753e6e11
+uri: usb:1.5.5
+usb,idVendor: 0456
+usb,idProduct: b673
+usb,release: 2.0
+usb,vendor: Analog Devices Inc.
+usb,product: PlutoSDR (ADALM-PLUTO)
+usb,serial: 1044734c9605001109000f00418f4f915f
+usb,libusb: 1.0.24.11584

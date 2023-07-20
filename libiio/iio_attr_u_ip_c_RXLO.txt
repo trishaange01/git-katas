@@ -1,0 +1,9 @@
+C:\Users\TDEVERA2\libiio>iio_attr -u ip:192.168.2.1 -c ad9361-phy RX_LO
+dev 'ad9361-phy', channel 'altvoltage0' (output), id 'RX_LO', attr 'external', value '0'
+dev 'ad9361-phy', channel 'altvoltage0' (output), id 'RX_LO', attr 'fastlock_load', value '0'
+dev 'ad9361-phy', channel 'altvoltage0' (output), id 'RX_LO', attr 'fastlock_recall', ERROR: Invalid argument (22)
+dev 'ad9361-phy', channel 'altvoltage0' (output), id 'RX_LO', attr 'fastlock_save', value '0 224,224,224,224,224,224,224,224,224,224,224,224,224,224,224,224'
+dev 'ad9361-phy', channel 'altvoltage0' (output), id 'RX_LO', attr 'fastlock_store', value '0'
+dev 'ad9361-phy', channel 'altvoltage0' (output), id 'RX_LO', attr 'frequency', value '2399999998'
+dev 'ad9361-phy', channel 'altvoltage0' (output), id 'RX_LO', attr 'frequency_available', value '[70000000 1 6000000000]'
+dev 'ad9361-phy', channel 'altvoltage0' (output), id 'RX_LO', attr 'powerdown', value '0'
