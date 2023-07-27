@@ -1,0 +1,128 @@
+dmesg : | grep sysid
+[    1.254479] axi_sysid 45000000.axi-sysid-0: AXI System ID core version (1.01.a) found
+[    1.263079] axi_sysid 45000000.axi-sysid-0: [ad77681evb] on [zed] git branch <master> git <86c9847c5fc14c2137aadb36125f04956f20fde0> clean [2023-07-11 19:19:12] UTC
+root@analog:~# 
+root@analog:~# 
+root@analog:~# iio_info | grep iio:device
+	iio:device0: ad7768-1 (buffer capable)
+	iio:device1: xadc
+root@analog:~# iio_info -u local:
+iio_info version: 0.25 (git tag:99cd3acd)
+Libiio version: 0.25 (git tag: 99cd3ac) backends: local xml ip usb serial
+IIO context created with local backend.
+Backend version: 0.25 (git tag: 99cd3ac)
+Backend description string: Linux analog 5.15.0-175820-gf20796462fab #4226 SMP PREEMPT Tue Jul 18 06:45:37 IST 2023 armv7l
+IIO context has 9 attributes:
+	hdl_system_id: [ad77681evb] on [zed] git branch [master] git [86c9847c5fc14c2137aadb36125f04956f20fde0] clean [2023-07-11 19:19:12] UTC
+	hw_carrier: Xilinx Zynq ZED
+	hw_model: EVAL-AD7768-1FMCZ on Xilinx Zynq ZED
+	hw_mezzanine: EVAL-AD7768-1FMCZ
+	hw_name: AD7768-1
+	hw_vendor: Analog Devices
+	hw_serial: Empty Field
+	local,kernel: 5.15.0-175820-gf20796462fab
+	uri: local:
+IIO context has 6 devices:
+	hwmon0: e000b000ethernetffffffff00
+		1 channels found:
+			temp1:  (input)
+			3 channel-specific attributes found:
+				attr  0: crit value: 100000
+				attr  1: input value: 26000
+				attr  2: max_alarm value: 0
+		No trigger on this device
+	hwmon1: hidpp_battery_0
+		0 channels found:
+		No trigger on this device
+	hwmon2: hidpp_battery_1
+		0 channels found:
+		No trigger on this device
+	iio:device0: ad7768-1 (buffer capable)
+		1 channels found:
+			voltage0:  (input, index: 0, format: le:s24/32>>8)
+			3 channel-specific attributes found:
+				attr  0: label value: (null)
+				attr  1: raw value: 144
+				attr  2: scale value: 0.000488281
+		4 device-specific attributes found:
+				attr  0: common_mode_voltage value: (AVDD1-AVSS)/2
+				attr  1: common_mode_voltage_available value: (AVDD1-AVSS)/2 2V5 2V05 1V9 1V65 1V1 0V9 OFF
+				attr  2: sampling_frequency value: 256000
+				attr  3: sampling_frequency_available value: 256000 128000 64000 32000 16000 8000 4000 2000 1000
+		2 buffer-specific attributes found:
+				attr  0: data_available value: 0
+				attr  1: length_align_bytes value: 8
+		1 debug attributes found:
+				debug attr  0: direct_reg_access value: 0x0
+		No trigger on this device
+	iio:device1: xadc
+		9 channels found:
+			voltage5: vccoddr (input)
+			3 channel-specific attributes found:
+				attr  0: label value: vccoddr
+				attr  1: raw value: 2048
+				attr  2: scale value: 0.732421875
+			voltage0: vccint (input)
+			3 channel-specific attributes found:
+				attr  0: label value: vccint
+				attr  1: raw value: 1399
+				attr  2: scale value: 0.732421875
+			voltage4: vccpaux (input)
+			3 channel-specific attributes found:
+				attr  0: label value: vccpaux
+				attr  1: raw value: 2465
+				attr  2: scale value: 0.732421875
+			temp0:  (input)
+			3 channel-specific attributes found:
+				attr  0: offset value: -2219
+				attr  1: raw value: 2595
+				attr  2: scale value: 123.040771484
+			voltage7: vrefn (input)
+			3 channel-specific attributes found:
+				attr  0: label value: vrefn
+				attr  1: raw value: 14
+				attr  2: scale value: 0.732421875
+			voltage1: vccaux (input)
+			3 channel-specific attributes found:
+				attr  0: label value: vccaux
+				attr  1: raw value: 2468
+				attr  2: scale value: 0.732421875
+			voltage2: vccbram (input)
+			3 channel-specific attributes found:
+				attr  0: label value: vccbram
+				attr  1: raw value: 1398
+				attr  2: scale value: 0.732421875
+			voltage3: vccpint (input)
+			3 channel-specific attributes found:
+				attr  0: label value: vccpint
+				attr  1: raw value: 1398
+				attr  2: scale value: 0.732421875
+			voltage6: vrefp (input)
+			3 channel-specific attributes found:
+				attr  0: label value: vrefp
+				attr  1: raw value: 1719
+				attr  2: scale value: 0.732421875
+		1 device-specific attributes found:
+				attr  0: sampling_frequency value: 961538
+		No trigger on this device
+	iio_sysfs_trigger:
+		0 channels found:
+		2 device-specific attributes found:
+				attr  0: add_trigger ERROR: Permission denied (13)
+				attr  1: remove_trigger ERROR: Permission denied (13)
+		No trigger on this device
+root@analog:~# 
+root@analog:~# 
+root@analog:~# 
+root@analog:~# cat b/boot/VERSION.txt 
+Boot partition: master 2023_07_18-07_51_14
+
+  HDL repository: https://github.com/analogdevicesinc/hdl
+  HDL branch: master
+  HDL git sha: '86c9847c5'
+
+  Linux repository: https://github.com/analogdevicesinc/linux
+  Linux branch: master
+  Linux git sha: 'f20796462fab'
+
+  HDL ad_fmclidar1_ebz_zc706 --- git commit: '907b750',commit date: '2021-07-28-12-45-20'root@analog:~# 
